@@ -1,1 +1,121 @@
-/* Add your own styles */
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4b566b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Search section */
+#controls {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#controls label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#country {
+    width: 350px;
+    max-width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* Buttons */
+button {
+    background-color: #21a6b8;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 10px 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #168a9a;
+}
+
+/* Results */
+#result {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Table */
+table {
+    width: 85%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 14px;
+}
+
+th {
+    background-color: #e8eef2;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternating rows */
+tbody tr:nth-child(even) {
+    background-color: #f2f6f8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    #country {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
